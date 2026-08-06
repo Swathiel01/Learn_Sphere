@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+
+<xsd:element name="EmployeeRecords">
+   <xsd:complexType>
+      <xsd:sequence>
+
+         <xsd:element name="EmployeeInfo" maxOccurs="unbounded">
+            <xsd:complexType>
+
+               <xsd:sequence>
+
+                  <xsd:element name="EmployeeCode" type="xsd:string"/>
+                  <xsd:element name="FullName" type="xsd:string"/>
+                  <xsd:element name="DepartmentName" type="xsd:string"/>
+                  <xsd:element name="TotalSalary" type="xsd:decimal"/>
+                  <xsd:element name="EmailExists" type="xsd:string"/>
+                  <xsd:element name="Grade" type="xsd:string"/>
+
+               </xsd:sequence>
+
+            </xsd:complexType>
+         </xsd:element>
+
+      </xsd:sequence>
+   </xsd:complexType>
+</xsd:element>
+
+</xsd:schema>
